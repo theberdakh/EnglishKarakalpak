@@ -1,0 +1,202 @@
+[
+ {
+  "id": 1,
+  "word": "Algothimic trading-Algoritmik savdo",
+  "meaning": "Algoritmik savdo - bu turli jihatlarni, shu jumladan narx va buyurtmalar miqdorini aniqlaydigan algoritmlarni qo'llagan holda kompyuter dasturlari yordamida amalga oshiriladigan va ko'pincha ularni joylashtirishsiz amalga oshiriladigan savdo.inson aralashuvisiz."
+ },
+ {
+  "id": 2,
+  "word": "Arbitrage strategy-Arbitraj strategiyasi",
+  "meaning": "Arbitraj strategiyasi bozor samarasizligi sababli mavjud bo'lgan narxlardagi farqlardan foydalanadi, masalan, bitta vositani sotib olish.bozor va bir vaqtning o'zida boshqa bozorda shunga o'xshash vositani sotish."
+ },
+ {
+  "id": 3,
+  "word": "Bid-ask spread-Taklif-so'rov tarqalishi",
+  "meaning": "Taklif-so'rov tarqalishi - bu bozor narxi o'rtasidagi farq\nishlab chiqaruvchi aktivni va sotishga tayyor bo'lgan narxni sotib olishga tayyor."
+ },
+ {
+  "id": 4,
+  "word": "Bilateral order-Ikki tomonlama tartib",
+  "meaning": "Buyurtma faqat muhokama qilinadi va kontragentlarga oshkor qilinadi savdo."
+ },
+ {
+  "id": 5,
+  "word": "Collateral-Garov",
+  "meaning": "Garov ta'minotchisi tomonidan garov oluvchi oldidagi majburiyatni ta'minlash uchun foydalaniladigan kafolat. Garov odatda naqd pul yoki qimmatli qog'ozlar shaklida bo'ladi. U marja deb ham ataladi."
+ },
+ {
+  "id": 6,
+  "word": "Client assets-Mijoz aktivlari",
+  "meaning": "Mijoz aktivlari - bu kompaniyaga tegishli bo'lgan aktivlar (pul mablag'lari, aktsiyalar, obligatsiyalar va boshqalar).\nmijoz, lekin investitsiya firmalari tomonidan investitsiya maqsadlarida saqlanadigan."
+ },
+ {
+  "id": 7,
+  "word": "Dealer-Diler",
+  "meaning": "Diler - bu qimmatli qog'ozlarni mustaqil ravishda sotib oladigan va sotadigan tashkilot\noperatsiyalar uchun asosiy rolni bajaradigan hisob."
+ },
+ {
+  "id": 8,
+  "word": "Derivative-Hosil",
+  "meaning": "Hosila - bu qiymati asoslanadigan moliyaviy vositaning bir turi asosiy aktiv qiymatining o'zgarishi."
+ },
+ {
+  "id": 9,
+  "word": "EU Emission Allowance (EUA)-EI emissiya uchun ruxsatnoma (EUA)",
+  "meaning": "Direktivning 3(a) moddasida aniqroq belgilangan muddat davomida bir tonna ekvivalent karbonat angidridni chiqarish uchun ruxsatnoma 2003\/87\/EC."
+ },
+ {
+  "id": 10,
+  "word": "EMIR",
+  "meaning": "Yevropa bozor infratuzilmasini tartibga solish."
+ },
+ {
+  "id": 11,
+  "word": "Fit and proper-\nTo'g'ri va mos",
+  "meaning": "Investitsiya firmasining biznesini samarali boshqaradigan shaxslar yaxshi obro'ga ega bo'lishi va investitsiya firmasini oqilona va oqilona boshqarishni ta'minlash uchun to'g'ri tajribaga ega bo'lishi kerak. Bu\nmos va to'g'ri test deb ataladi."
+ },
+ {
+  "id": 12,
+  "word": "Fundamental data-\nAsosiy ma'lumotlar",
+  "meaning": "Haqiqiy tovar va xizmatlarga talab va taklif to'g'risidagi ma'lumotlar iqtisodiyot."
+ },
+ {
+  "id": 13,
+  "word": "Hard position limit-Qattiq pozitsiya chegarasi",
+  "meaning": "Qattiq pozitsiya chegarasi a miqdori bo'yicha oldindan belgilangan qat'iy chegaradir\nkorxona ega bo'lishi mumkin bo'lgan berilgan vosita."
+ },
+ {
+  "id": 14,
+  "word": "Hedging-Xedjing",
+  "meaning": "Xedjlash - bu istalmagan tavakkalchilikni minimallashtirish maqsadida boshqa qarama-qarshi pozitsiyani egallash orqali korxonaning ta'sirini qoplash amaliyotidir. Bu turli asboblardagi pozitsiyalarni o'zgartirish orqali ham amalga oshirilishi mumkin va bozorlar."
+ },
+ {
+  "id": 15,
+  "word": "Inducement-Induktsiya",
+  "meaning": "Rag'batlantirish - bu moliyaviy vositachilarga rag'batlantirish\/sotish evaziga beriladigan turli xil rag'batlantirish turlarini nazarda tutuvchi umumiy tushuncha.\no'z mijozlariga maxsus mahsulotlar."
+ },
+ {
+  "id": 16,
+  "word": "Insider dealing-Insayder bilan ishlash",
+  "meaning": "Insayder muomalasi - bu insayder ichki ma'lumotlarga asoslanib, biror narsa bilan shug'ullansa yoki muomala qilishga harakat qiladi."
+ },
+ {
+  "id": 17,
+  "word": "Latency period-Kechikish davri",
+  "meaning": "Savdo tizimiga kiritilgan buyurtma bo'lgunga qadar unda qoladi bajarilgan yoki bekor qilingan."
+ },
+ {
+  "id": 18,
+  "word": "Lit market-Yoritilgan bozor.",
+  "meaning": "Yoritilgan bozor - bu buyurtmalar buyurtma kitoblarida aks ettiriladigan va shuning uchun savdodan oldin shaffof bo'lgan bozor. Aksincha, qorong'u hovuzlardagi buyurtmalar yoki qorong'i buyurtmalar savdodan oldin shaffof emas. Bu buyurtmalar uchun ham shunday broker tarmoqlarini kesib o'tish."
+ },
+ {
+  "id": 19,
+  "word": "Manipulating devices-Manipulyatsiya qurilmalari",
+  "meaning": "Manipulyatsiya qurilmalari soxta qurilmalar yoki aldashning boshqa shakllaridan foydalanadigan savdo yoki savdoga buyurtma berishni anglatadi.\nfitna."
+ },
+ {
+  "id": 20,
+  "word": "Market integrity-Bozor yaxlitligi",
+  "meaning": "Bozor yaxlitligi bu bozorlarning adolatsiz va xavfsiz ishlashidir noto'g'ri ma'lumotlar yoki ichki savdolar, shuning uchun investorlar ishonchga ega bo'lishi va etarlicha himoyalangan bo'lishi mumkin."
+ },
+ {
+  "id": 21,
+  "word": "Order resting period-Buyurtmaning dam olish muddati",
+  "meaning": "Buyurtma bajarilishidan oldin savdo tizimida kutadigan vaqt.\nKechikish davriga o'xshaydi."
+ },
+ {
+  "id": 22,
+  "word": "Over the Counter (OTC)-Peshtaxtadan tashqari (OTC)",
+  "meaning": "Peshtaxta yoki birjadan tashqari savdo - bu tartibga solinadigan bozor yoki MTF kabi uyushgan joyda amalga oshirilmaydigan savdo usuli. U ikki tomonlama savdodan tortib doimiy savdoga qadar turli shakllarga ega bo'lishi mumkin tuzilmalar (masalan, tizimli ichki tuzilmalar va broker tarmoqlari)."
+ },
+ {
+  "id": 23,
+  "word": "Position limit-Lavozim chegarasi",
+  "meaning": "Lavozim chegarasi - bu berilgan miqdorning oldindan belgilangan chegarasi\ntashkilot ega bo'lishi mumkin bo'lgan vosita."
+ },
+ {
+  "id": 24,
+  "word": "Post trading-\nPost savdo",
+  "meaning": "Umumiy atama bitim tuzilgan paytdan boshlab mulk huquqi qonuniy ravishda o'tkazilgan paytgacha bo'lgan barcha jarayonlarni bildirish uchun ishlatiladi. Bunga kliring, hisob-kitob va boshqalar kiradi\nmoliyaviy firmaning bek-ofis faoliyati."
+ },
+ {
+  "id": 25,
+  "word": "Regulatory arbitrage-Normativ arbitraj",
+  "meaning": "Tartibga soluvchi arbitraj tartibga solish holatidagi farqlardan foydalanadi\nfoyda olish uchun turli yurisdiktsiyalarda yoki bozorlarda."
+ },
+ {
+  "id": 26,
+  "word": "Repository (Trade)-Repozitariy (savdo)",
+  "meaning": "Moliyaviy shartnomalar to'g'risidagi ma'lumotlarni to'playdigan, kelajakdagi shartnomalarning muhim xususiyatlarini saqlaydigan mexanizm\nma'lumotnoma."
+ },
+ {
+  "id": 27,
+  "word": "Sanction-Sanksiya",
+  "meaning": "Jazo sifatida tayinlangan ma'muriy yoki jinoiy jazo."
+ },
+ {
+  "id": 28,
+  "word": "Settlement-Hisob-kitob",
+  "meaning": "Pul va (yoki) qimmatli qog'ozlarni o'tkazish orqali ishtirokchilarning majburiyatlarini bajarish uchun bitim yoki ishlov berishni yakunlash."
+ },
+ {
+  "id": 29,
+  "word": "Trade repository-Savdo ombori",
+  "meaning": "Ochiq birjadan tashqari derivativ shartnomalar bo'yicha ma'lumotlarning elektron ma'lumotlar bazasini yurituvchi markazlashtirilgan reestr."
+ },
+ {
+  "id": 30,
+  "word": "Trading Venue-\nSavdo joyi",
+  "meaning": "Savdo joyi - qimmatli qog'ozlar almashinadigan rasmiy joy; bu\nMTF va tartibga solinadigan bozorlarni o'z ichiga oladi."
+ },
+ {
+  "id": 31,
+  "word": "Transparency Directive-Shaffoflik direktivasi",
+  "meaning": "Evropa Parlamenti va Kengashning 2004\/109\/EC direktivasi\nmoliyaviy ma'lumotlar va yirik xoldinglarni nashr qilish qoidalarini belgilaydi."
+ },
+ {
+  "id": 32,
+  "word": "Undertakings for Collective Investment in Transferable Securities Directives (UCITS)-O'tkaziluvchi qimmatli qog'ozlar bo'yicha direktivalarga jamoaviy investitsiyalar kiritish bo'yicha majburiyatlar (UCITS)",
+  "meaning": "O'tkaziladigan qimmatli qog'ozlar bo'yicha direktivalarga jamoaviy investitsiyalar bo'yicha majburiyatlar, aktivlarni birlashtirishning standartlashtirilgan va tartibga solinadigan turi, muvofiqlashtirilgan Evropa Ittifoqi qoidalariga bo'ysunadi va odatda chakana investorlar uchun ishlab chiqariladi va sotiladi."
+ },
+ {
+  "id": 33,
+  "word": "Vertical integration model-Vertikal integratsiya\nmodel",
+  "meaning": "Vertikal integratsiya model ishlab chiqarish jarayonining barcha bosqichlari amalga oshiriladigan biznes modeli\nbitta firma tomonidan, masalan, savdo, kliring va hisob-kitoblar xizmatlar"
+ },
+ {
+  "id": 34,
+  "word": "Volatility-O'zgaruvchanlik",
+  "meaning": "O'zgaruvchanlik ma'lum bir vaqt ichida vosita qiymatining o'zgarishini anglatadi. Bunga qiymatning ko'tarilishi va tushishi yoki umumiy tebranish kiradi\nnarxlar yoki bozorlar. Odatda foiz sifatida ifodalanadi."
+ },
+ {
+  "id": 35,
+  "word": "Tied agent-Bog'langan agent",
+  "meaning": "Faqat birining xizmatini targ'ib qila oladigan kompaniya yoki sotuvchi\nmuayyan provayder (odatda ularning bevosita ish beruvchisi)."
+ },
+ {
+  "id": 36,
+  "word": "Systemic failure-Tizimli muvaffaqiyatsizlik",
+  "meaning": "Tizimli nosozlik butun bozor yoki bozor segmentining ishdan chiqishini yoki muhim ob'ektning ishdan chiqishiga olib kelishi mumkin. natijada ko'plab muvaffaqiyatsizliklar."
+ },
+ {
+  "id": 37,
+  "word": "Structured bond-Strukturaviy bog'lanish",
+  "meaning": "Strukturaviy obligatsiyaning qiymati asosiy indeks yoki vosita bilan bog'langan, shuning uchun obligatsiya oddiy obligatsiya bilan bir xil tarzda kupon to'laydi, lekin to'lanishi kerak bo'lgan obligatsiyaning haqiqiy qiymatiga bog'liq bo'ladi.\nu bog'langan asosiy ishlash."
+ },
+ {
+  "id": 38,
+  "word": "Structured deposit-Strukturaviy depozit",
+  "meaning": "Strukturaviy omonatning daromadi qandaydir indeks yoki asosiy vositaga bog'liq bo'lishi mumkin, shuning uchun to'langan summa ushbu asosiy narsaga bog'liq bo'ladi.\nishlash."
+ },
+ {
+  "id": 39,
+  "word": "Standardised derivative-Standartlashtirilgan\nhosila",
+  "meaning": "Standartlashtirilgan hosila bu a ga asoslangan muntazam xususiyatlarga ega\nstandart shartnoma."
+ },
+ {
+  "id": 40,
+  "word": "Single rulebook-Yagona qoidalar kitobi",
+  "meaning": "Yagona qoidalar to'plami - bu Ittifoqning barcha a'zo davlatlari uchun tartibga soluvchi arbitraj imkoniyati yo'qligi uchun yagona qoidalar to'plamining kontseptsiyasi.\nturli bozorlar o'rtasida."
+ }
+]
