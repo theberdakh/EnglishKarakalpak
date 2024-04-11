@@ -1,18 +1,25 @@
-package com.theberdakh.tradingglossary
+package com.theberdakh.tradingglossary.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.theberdakh.tradingglossary.data.Word
+import com.theberdakh.tradingglossary.data.WordDiffUtil
 import com.theberdakh.tradingglossary.databinding.ItemCardWordBinding
 
-class WordAdapter(private val onClick: (Word) -> Unit): ListAdapter<Word, WordAdapter.WordViewHolder>(WordDiffUtil()){
+class WordAdapter(private val onClick: (Word) -> Unit): ListAdapter<Word, WordAdapter.WordViewHolder>(
+    WordDiffUtil()
+){
 
     inner class WordViewHolder(private val binding: ItemCardWordBinding): ViewHolder(binding.root){
         fun bind(){
             val word = getItem(adapterPosition)
             binding.titleWord.text = word.word
             binding.captionWord.text = word.meaning
+            binding.root.setOnClickListener {
+                onClick.invoke(word)
+            }
         }
     }
 

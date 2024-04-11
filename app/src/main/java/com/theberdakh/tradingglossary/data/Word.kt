@@ -1,4 +1,4 @@
-package com.theberdakh.tradingglossary
+package com.theberdakh.tradingglossary.data
 
 import androidx.recyclerview.widget.DiffUtil
 
