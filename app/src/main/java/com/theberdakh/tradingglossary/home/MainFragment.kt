@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.theberdakh.tradingglossary.R
+import com.theberdakh.englishkarakalpak.R
 import com.theberdakh.tradingglossary.search.SearchFragment
 import com.theberdakh.tradingglossary.data.Word
 import com.theberdakh.tradingglossary.utils.addFragmentToBackStack
-import com.theberdakh.tradingglossary.databinding.FragmentMainBinding
+import com.theberdakh.englishkarakalpak.databinding.FragmentMainBinding
 import com.theberdakh.tradingglossary.data.convertJsonString
 import com.theberdakh.tradingglossary.data.jsonToString
 import com.theberdakh.tradingglossary.word.WordFragment

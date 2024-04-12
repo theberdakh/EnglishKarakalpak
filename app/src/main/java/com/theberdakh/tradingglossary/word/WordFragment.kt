@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.theberdakh.tradingglossary.data.Word
-import com.theberdakh.tradingglossary.databinding.FragmentWordBinding
+import com.theberdakh.englishkarakalpak.databinding.FragmentWordBinding
 
 class WordFragment(private val word: Word): Fragment() {
     private var _binding: FragmentWordBinding? =null
@@ -31,7 +31,7 @@ class WordFragment(private val word: Word): Fragment() {
     }
 
     private fun initViews() {
-        binding.title.text  = word.word
-        binding.meaning.text = word.meaning
+        binding.title.text  = word.english
+        binding.meaning.text = word.karakalpak
     }
 }

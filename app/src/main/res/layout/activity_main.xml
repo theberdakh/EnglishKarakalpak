@@ -6,4 +6,4 @@
     android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.MainActivity"/>
+    tools:context="com.theberdakh.tradingglossary.home.MainActivity"/>

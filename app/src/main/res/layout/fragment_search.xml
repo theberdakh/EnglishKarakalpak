@@ -27,6 +27,7 @@
             <View
                 android:layout_width="28dp"
                 android:layout_height="28dp"
+                android:backgroundTint="?colorOnSurface"
                 android:layout_gravity="center"
                 android:background="@drawable/round_arrow_back_24"/>
         </FrameLayout>

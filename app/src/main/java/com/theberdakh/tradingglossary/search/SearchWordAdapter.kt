@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.theberdakh.tradingglossary.data.Word
 import com.theberdakh.tradingglossary.data.WordDiffUtil
-import com.theberdakh.tradingglossary.databinding.ItemSearchBinding
+import com.theberdakh.englishkarakalpak.databinding.ItemSearchBinding
 
 class SearchWordAdapter(private val onClick: (Word) -> Unit): ListAdapter<Word, SearchWordAdapter.SearchWordViewHolder>(
     WordDiffUtil()
@@ -14,7 +14,7 @@ class SearchWordAdapter(private val onClick: (Word) -> Unit): ListAdapter<Word, 
     inner class SearchWordViewHolder(private val binding: ItemSearchBinding): ViewHolder(binding.root){
         fun bind(){
             val word = getItem(adapterPosition)
-            binding.titleWord.text = word.word
+            binding.titleWord.text = word.english
             binding.root.setOnClickListener {
                 onClick.invoke(word)
             }

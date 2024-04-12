@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:clickable="true"
     android:background="?colorSurface"
     android:focusable="true"
@@ -9,11 +10,12 @@
     android:orientation="vertical">
 
 
-    <Toolbar
+    <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_all_words"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:navigationIcon="@drawable/round_arrow_back_24"
+        app:navigationIcon="@drawable/round_arrow_back_24"
+        app:navigationIconTint="?colorOnSurface"
         />
 
     <androidx.core.widget.NestedScrollView

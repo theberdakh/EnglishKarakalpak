@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.theberdakh.tradingglossary.data.Word
 import com.theberdakh.tradingglossary.data.WordDiffUtil
-import com.theberdakh.tradingglossary.databinding.ItemCardWordBinding
+import com.theberdakh.englishkarakalpak.databinding.ItemCardWordBinding
 
 class WordAdapter(private val onClick: (Word) -> Unit): ListAdapter<Word, WordAdapter.WordViewHolder>(
     WordDiffUtil()
@@ -15,8 +15,8 @@ class WordAdapter(private val onClick: (Word) -> Unit): ListAdapter<Word, WordAd
     inner class WordViewHolder(private val binding: ItemCardWordBinding): ViewHolder(binding.root){
         fun bind(){
             val word = getItem(adapterPosition)
-            binding.titleWord.text = word.word
-            binding.captionWord.text = word.meaning
+            binding.titleWord.text = word.english
+            binding.captionWord.text = word.karakalpak
             binding.root.setOnClickListener {
                 onClick.invoke(word)
             }

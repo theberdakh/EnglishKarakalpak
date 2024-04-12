@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trading Glossary</string>
+    <string name="app_name">English-Karakalpak</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis, felis vitae semper egestas, mi neque mattis velit, id iaculis tortor orci a velit. Morbi pharetra lobortis justo bibendum suscipit. Maecenas hendrerit dictum est. Nulla eget risus orci. Praesent auctor mauris a magna bibendum tincidunt. Ut ultricies est est, a rutrum nulla interdum vitae. Sed eu dictum ante, dapibus sagittis nisl. Integer tempus aliquet justo, lobortis aliquet dolor efficitur at. Proin eu dictum nulla, vitae fringilla nisl. Donec id orci quis turpis pharetra posuere nec non odio. Donec faucibus ipsum sit amet aliquam sollicitudin. Donec vitae tortor sit amet mauris pharetra varius. Ut non tempus ex, in suscipit nibh.
 
 Sed tincidunt convallis tristique. Donec sit amet urna sodales, commodo neque eget, facilisis mi. Ut nec euismod urna. Ut vestibulum sit amet dui eget malesuada. Donec a magna malesuada, eleifend nisl vitae, laoreet quam. Integer a diam congue, aliquet dolor sed, posuere diam. Phasellus vitae ullamcorper sem. Sed vulputate diam ac tortor efficitur, nec suscipit ante lacinia. Donec fermentum aliquam justo, ac porttitor urna sagittis quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ac dui cursus, auctor sapien in, imperdiet tellus.
@@ -9,5 +9,6 @@ Suspendisse auctor vestibulum metus, in congue nisi vulputate auctor. Suspendiss
 Fusce eu convallis massa. Sed nisl ipsum, sodales id blandit aliquet, venenatis feugiat purus. Nulla facilisi. Vestibulum tincidunt risus ultrices nisi vulputate tempor. Nulla efficitur, nunc ut euismod gravida, dui dolor blandit lacus, vel semper ante odio nec lorem. Integer convallis, tortor non vehicula maximus, ipsum leo fermentum leo, sit amet volutpat ipsum lacus in velit. Curabitur pellentesque egestas urna, euismod finibus dolor elementum vel. Morbi dapibus nisl eget orci finibus maximus.
 
 Sed non ipsum consequat, convallis arcu id, tempor orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis lacinia justo in ligula convallis tristique. Ut maximus rutrum dolor, ac rhoncus felis ultrices at. Phasellus porta, neque ut varius imperdiet, ex sem fermentum lectus, vitae congue ante ipsum eu arcu. In erat dolor, scelerisque ut quam eget, faucibus fringilla libero. Mauris sit amet mi nisi. Vestibulum molestie risus non nulla faucibus, eu condimentum elit accumsan. Nunc nec libero et mi eleifend egestas.</string>
-    <string name="hint_search">Termindi kiritiń</string>
+    <string name="hint_search">Izlew ushın sózdi kiritiń</string>
+    <string name="dictionary">Sózlik</string>
 </resources>

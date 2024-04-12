@@ -1,11 +1,13 @@
 package com.theberdakh.tradingglossary.data
 
 import androidx.recyclerview.widget.DiffUtil
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class Word(
-    val id: Int,
-    val word: String,
-    val meaning: String
+    val id: Double,
+    val english: String,
+    val karakalpak: String
 )
 
 class WordDiffUtil : DiffUtil.ItemCallback<Word>() {

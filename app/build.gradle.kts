@@ -1,14 +1,17 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.jetbrainsKotlinSerialization)
+
+
 }
 
 android {
-    namespace = "com.theberdakh.tradingglossary"
+    namespace = "com.theberdakh.englishkarakalpak"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.theberdakh.tradingglossary"
+        applicationId = "com.theberdakh.englishkarakalpak"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -50,4 +53,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.gson)
+
+    implementation(libs.kotlinx.serialization.json)
 }
