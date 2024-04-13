@@ -1,12 +1,17 @@
 package com.theberdakh.tradingglossary.word
 
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.text.Html
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.text.HtmlCompat
 import androidx.fragment.app.Fragment
+import com.theberdakh.englishkarakalpak.R
 import com.theberdakh.tradingglossary.data.Word
 import com.theberdakh.englishkarakalpak.databinding.FragmentWordBinding
 import java.util.Locale
@@ -37,6 +42,21 @@ class WordFragment(private val word: Word): Fragment(), TextToSpeech.OnInitListe
         binding.chipListen.setOnClickListener {
             readWord(word.english)
         }
+
+        binding.chipShare.setOnClickListener {
+            share(word)
+        }
+    }
+
+
+
+
+    private fun share(word: Word) {
+        val shareIntent = Intent()
+        shareIntent.action = Intent.ACTION_SEND
+        shareIntent.type="text/plain"
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "${word.english} - Mánisi: ${word.karakalpak}\n\nInglizshe-Qaraqalpaqsha sózlik");
+        startActivity(Intent.createChooser(shareIntent,"Úlesiw"))
     }
 
     private fun readWord(word: String) {
