@@ -40,6 +40,30 @@
                 android:ellipsize="end"
                 tools:text="@string/lorem"/>
 
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="true">
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_listen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Esitiw"
+                    app:chipIcon="@drawable/round_volume_up_24"
+                    app:chipIconTint="?colorOnSurface"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Úlesiw"
+                    app:chipIcon="@drawable/round_share_24"
+                    app:chipIconTint="?colorOnSurface"/>
+
+            </com.google.android.material.chip.ChipGroup>
+
             <TextView
                 android:id="@+id/meaning"
                 android:layout_marginTop="24dp"
