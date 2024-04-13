@@ -56,9 +56,28 @@
 
 
 
+
+
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Izlew tártibi"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="8dp"
+        android:textAppearance="?textAppearanceLabelMedium"/>
 
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switch_english_to_karakalpak"
+        android:paddingHorizontal="16dp"
+
+        android:layout_width="match_parent"
+        android:text="English -> Karakalpak"
+        android:checked="true"
+        android:textAppearance="?textAppearanceBodyLarge"
+        android:layout_height="wrap_content" />
 
 
     <androidx.recyclerview.widget.RecyclerView

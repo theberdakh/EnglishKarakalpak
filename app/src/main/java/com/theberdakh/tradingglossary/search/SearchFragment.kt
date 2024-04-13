@@ -24,6 +24,7 @@ class SearchFragment : Fragment() {
     private lateinit var adapter: SearchWordAdapter
     private val allWords = mutableListOf<Word>()
     private val binding get() = checkNotNull(_binding)
+    private var language: Language = Language.English
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,26 +32,36 @@ class SearchFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSearchBinding.inflate(inflater, container, false)
+
+
         initViews()
         initListeners()
         return binding.root
     }
 
     private fun initViews() {
-        binding.searchEditText.requestFocus()
 
-        adapter = SearchWordAdapter {
+
+        adapter = SearchWordAdapter (language){
             navigateToWordFragment(it)
         }
-        val recyclerDividerItemDecoration =
-            DividerItemDecoration(requireContext(), RecyclerView.VERTICAL)
-        binding.recyclerSearch.addItemDecoration(recyclerDividerItemDecoration)
-        binding.recyclerSearch.adapter = adapter
 
+
+        binding.searchEditText.requestFocus()
 
         val jsonString: String = requireContext().jsonToString("words.json")
         allWords.addAll(convertJsonUsingSerialisation(jsonString))
+
+        val recyclerDividerItemDecoration =
+            DividerItemDecoration(requireContext(), RecyclerView.VERTICAL)
+        binding.recyclerSearch.addItemDecoration(recyclerDividerItemDecoration)
+
         adapter.submitList(allWords)
+        binding.recyclerSearch.adapter = adapter
+
+
+
+
 
     }
 
@@ -63,9 +74,42 @@ class SearchFragment : Fragment() {
 
 
         binding.searchEditText.doAfterTextChanged {
-            val sortedWords = sortedWords(it.toString())
+
+            when(language){
+                Language.English -> {}
+                Language.Karakalpak -> {}
+            }
+            val sortedWords = sortedWords(it.toString(), language = language)
             adapter.notifyDataSetChanged()
             adapter.submitList(sortedWords)
+        }
+
+
+        var clicked = false
+        binding.switchEnglishToKarakalpak.setOnClickListener {
+            if (clicked){
+                binding.switchEnglishToKarakalpak.text = "English -> Karakalpak"
+                language = Language.English
+
+                adapter = SearchWordAdapter (language){
+                    navigateToWordFragment(it)
+                }
+                adapter.submitList(allWords)
+                binding.recyclerSearch.adapter = adapter
+
+                clicked = false
+            } else {
+                binding.switchEnglishToKarakalpak.text ="Qaraqalpaqsha -> Inglizshe"
+                language = Language.Karakalpak
+
+                adapter = SearchWordAdapter (language){
+                    navigateToWordFragment(it)
+                }
+                adapter.submitList(allWords)
+                binding.recyclerSearch.adapter = adapter
+                clicked = true
+            }
+
         }
     }
 
