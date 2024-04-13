@@ -13,6 +13,7 @@ import com.theberdakh.tradingglossary.search.SearchFragment
 import com.theberdakh.tradingglossary.data.Word
 import com.theberdakh.tradingglossary.utils.addFragmentToBackStack
 import com.theberdakh.englishkarakalpak.databinding.FragmentMainBinding
+import com.theberdakh.tradingglossary.about.AboutFragment
 import com.theberdakh.tradingglossary.data.convertJsonString
 import com.theberdakh.tradingglossary.data.jsonToString
 import com.theberdakh.tradingglossary.word.WordFragment
@@ -38,6 +39,16 @@ class MainFragment : Fragment() {
         } else {
             binding.toolbar.navigationIcon = getDrawable(requireContext(), R.drawable.baseline_mode_night_24)
 
+        }
+
+        binding.toolbar.setOnMenuItemClickListener { menuItem ->
+            if(menuItem.itemId == R.id.action_about){
+                addFragmentToBackStack(requireActivity().supportFragmentManager,
+                    R.id.main_container,
+                    AboutFragment()
+                )
+            }
+            true
         }
 
         binding.toolbar.setNavigationOnClickListener {

@@ -19,6 +19,7 @@
             app:layout_collapseMode="pin"
             app:title="@string/app_name"
             app:titleCentered="true"
+            app:menu="@menu/menu_about"
             app:titleTextAppearance="?textAppearanceTitleMedium" />
 
         <TextView
