@@ -4,6 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.app.ActivityCompat.getDrawable
+import androidx.core.app.ActivityCompat.recreate
 import androidx.fragment.app.Fragment
 import com.theberdakh.englishkarakalpak.R
 import com.theberdakh.tradingglossary.search.SearchFragment
@@ -28,6 +31,29 @@ class MainFragment : Fragment() {
         initViews()
         initListeners()
 
+        val nightMode = AppCompatDelegate.getDefaultNightMode()
+        if (nightMode == AppCompatDelegate.MODE_NIGHT_YES || nightMode == AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY || nightMode == AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM || nightMode == AppCompatDelegate.MODE_NIGHT_UNSPECIFIED) {
+            binding.toolbar.navigationIcon = getDrawable(requireContext(), R.drawable.round_light_mode_24)
+
+        } else {
+            binding.toolbar.navigationIcon = getDrawable(requireContext(), R.drawable.baseline_mode_night_24)
+
+        }
+
+        binding.toolbar.setNavigationOnClickListener {
+            // Check the current night mode state
+
+            if (nightMode == AppCompatDelegate.MODE_NIGHT_YES) {
+                // If it's currently set to night mode, change to light mode
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            } else {
+                // If it's currently set to light mode or undefined, change to night mode
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
+            // Recreate the activity for the theme change to take effect
+            recreate(requireActivity())
+        }
+
         return binding.root
     }
 
@@ -39,10 +65,8 @@ class MainFragment : Fragment() {
         val jsonString: String = requireContext().jsonToString("words.json")
         val arrayOfWords = convertJsonString(jsonString)
 
-        if (arrayOfWords !=  null){
-            val list = arrayOfWords.toList()
-            adapter.submitList(list)
-        }
+        val list = arrayOfWords.toList()
+        adapter.submitList(list)
     }
 
     private fun navigateToWordFragment(word: Word) {
