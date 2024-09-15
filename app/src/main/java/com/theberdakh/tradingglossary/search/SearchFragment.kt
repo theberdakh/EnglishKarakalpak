@@ -2,7 +2,6 @@ package com.theberdakh.tradingglossary.search
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +23,7 @@ class SearchFragment : Fragment() {
     private lateinit var adapter: SearchWordAdapter
     private val allWords = mutableListOf<Word>()
     private val binding get() = checkNotNull(_binding)
-    private var language: Language = Language.English
+    private var language: Language = Language.ENGLISH
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -49,7 +48,7 @@ class SearchFragment : Fragment() {
 
         binding.searchEditText.requestFocus()
 
-        val jsonString: String = requireContext().jsonToString("words.json")
+        val jsonString: String = requireContext().jsonToString("words2.json")
         allWords.addAll(convertJsonUsingSerialisation(jsonString))
 
         val recyclerDividerItemDecoration =
@@ -76,8 +75,8 @@ class SearchFragment : Fragment() {
         binding.searchEditText.doAfterTextChanged {
 
             when(language){
-                Language.English -> {}
-                Language.Karakalpak -> {}
+                Language.ENGLISH -> {}
+                Language.KARAKALPAK -> {}
             }
             val sortedWords = sortedWords(it.toString(), language = language)
             adapter.notifyDataSetChanged()
@@ -89,7 +88,7 @@ class SearchFragment : Fragment() {
         binding.switchEnglishToKarakalpak.setOnClickListener {
             if (clicked){
                 binding.switchEnglishToKarakalpak.text = "English -> Karakalpak"
-                language = Language.English
+                language = Language.ENGLISH
 
                 adapter = SearchWordAdapter (language){
                     navigateToWordFragment(it)
@@ -100,7 +99,7 @@ class SearchFragment : Fragment() {
                 clicked = false
             } else {
                 binding.switchEnglishToKarakalpak.text ="Qaraqalpaqsha -> Inglizshe"
-                language = Language.Karakalpak
+                language = Language.KARAKALPAK
 
                 adapter = SearchWordAdapter (language){
                     navigateToWordFragment(it)
@@ -113,21 +112,21 @@ class SearchFragment : Fragment() {
         }
     }
 
-    private fun sortedWords(text: String, language: Language = Language.English): List<Word> {
+    private fun sortedWords(text: String, language: Language = Language.ENGLISH): List<Word> {
 
 
         val allContainingWords = allWords.filter { word ->
             val wordToCheck = when (language) {
-                Language.English -> word.english
-                Language.Karakalpak -> word.karakalpak
+                Language.ENGLISH -> word.english
+                Language.KARAKALPAK -> word.karakalpak
             }
             wordToCheck.lowercase().contains(text)
         }
 
         val startingFromText = allContainingWords.filter { word ->
             val wordToCheck = when (language) {
-                Language.English -> word.english
-                Language.Karakalpak -> word.karakalpak
+                Language.ENGLISH -> word.english
+                Language.KARAKALPAK -> word.karakalpak
             }
             wordToCheck.lowercase().startsWith(text.lowercase())
         }

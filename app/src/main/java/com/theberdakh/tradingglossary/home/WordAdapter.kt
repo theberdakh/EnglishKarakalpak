@@ -8,15 +8,17 @@ import com.theberdakh.tradingglossary.data.Word
 import com.theberdakh.tradingglossary.data.WordDiffUtil
 import com.theberdakh.englishkarakalpak.databinding.ItemCardWordBinding
 
-class WordAdapter(private val onClick: (Word) -> Unit): ListAdapter<Word, WordAdapter.WordViewHolder>(
-    WordDiffUtil()
-){
+class WordAdapter(private val onClick: (Word) -> Unit) :
+    ListAdapter<Word, WordAdapter.WordViewHolder>(
+        WordDiffUtil()
+    ) {
 
-    inner class WordViewHolder(private val binding: ItemCardWordBinding): ViewHolder(binding.root){
-        fun bind(){
+    inner class WordViewHolder(private val binding: ItemCardWordBinding) :
+        ViewHolder(binding.root) {
+        fun bind() {
             val word = getItem(adapterPosition)
-            binding.titleWord.text = word.english
-            binding.captionWord.text = word.karakalpak
+            binding.titleWord.text = word.karakalpak
+            binding.captionWord.text = word.english
             binding.root.setOnClickListener {
                 onClick.invoke(word)
             }
@@ -24,11 +26,13 @@ class WordAdapter(private val onClick: (Word) -> Unit): ListAdapter<Word, WordAd
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordViewHolder {
-        return WordViewHolder(ItemCardWordBinding.inflate(
-            LayoutInflater.from(parent.context),
-            parent,
-            false
-        ))
+        return WordViewHolder(
+            ItemCardWordBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) = holder.bind()

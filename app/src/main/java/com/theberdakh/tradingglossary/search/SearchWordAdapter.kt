@@ -16,8 +16,8 @@ class SearchWordAdapter(private val language: Language, private val onClick: (Wo
         fun bind(){
             val word = getItem(adapterPosition)
             when(language){
-                Language.English -> {binding.titleWord.text = word.english}
-                Language.Karakalpak -> {binding.titleWord.text = word.karakalpak}
+                Language.ENGLISH -> {binding.titleWord.text = word.english}
+                Language.KARAKALPAK -> {binding.titleWord.text = word.karakalpak}
             }
             binding.root.setOnClickListener {
                 onClick.invoke(word)

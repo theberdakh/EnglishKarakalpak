@@ -73,7 +73,7 @@ class MainFragment : Fragment() {
             navigateToWordFragment(it)
         }
         binding.recyclerSearchBar.adapter = adapter
-        val jsonString: String = requireContext().jsonToString("words.json")
+        val jsonString: String = requireContext().jsonToString("words2.json")
         val arrayOfWords = convertJsonString(jsonString)
 
         val list = arrayOfWords.toList()
